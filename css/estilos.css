@@ -54,10 +54,77 @@ h3 {
 img {
     max-width: 100%;
     display: block;
+    height: auto;
 }
 
 /* Utilidades */
 
 .text-center {
     text-align: center;
+}
+
+/* Degradados */
+
+.degraded-green {
+    color: transparent;
+    background: linear-gradient(to right, var(--primary-blue) 0%, var(--secondary-green) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* Header */
+
+.header {
+    background-color: var(--black);
+    padding: calc(var(--separacion) * 2) 0;
+    color: var(--white);
+}
+
+@media (min-width: 1024px) {
+    .header-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.text-header {
+    text-align: center;
+    padding-top: var(--separacion);
+}
+
+@media (min-width: 768px) {
+    .text-header {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+    }
+}
+
+.text-header p {
+    margin: 0;
+}
+
+.tagline-product {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.product-name {
+    font-size: 5rem;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .product-name {
+        font-size: 8rem;
+        margin: 0;
+        line-height: 1;
+    }
+}
+
+.price-product span {
+    font-size: 6rem;
+    font-weight: 900;
 }
