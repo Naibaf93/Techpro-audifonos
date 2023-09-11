@@ -220,6 +220,126 @@ img {
 }
 
 .text-about-tech p {
-    font-size: 2rem;
-    line-height: 2;
+    line-height: 1;
+}
+
+@media (min-width: 768) {
+    .text-about-tech p {
+        font-size: 2rem;
+        line-height: 2;
+    }
+}
+
+/* Modelos TechPRO */
+
+.models {
+    padding: var(--separacion) 0;
+}
+
+.header-models {
+    font-size: 6rem;
+    margin-bottom: var(--separacion);
+}
+
+.models-list {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media (min-width: 1200px) {
+    .models-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 18rem);
+        gap: 4rem;
+    }
+}
+
+.model {
+    background-color: var(--light-grey);
+    margin-bottom: 2rem;
+    padding-left: 4rem;
+    color: var(--primary-blue);
+    border-radius: 2rem;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    background-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition-property: transform background-size;
+    transition-duration: .3s;
+}
+
+.model:hover {
+    transform: scale(1.1);
+    background-size: 30rem;
+}
+
+@media (min-width: 640px) {
+    .model {
+        background-size: 15rem;
+    }
+
+    .model:hover {
+        background-size: 20rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .model {
+        margin-bottom: 0;
+    }
+}
+
+.model h3 {
+    font-size: 2.3rem;
+}
+
+.model .price {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 0;
+}
+
+.model:first-of-type {
+    margin-bottom: 0;
+}
+
+.model-x {
+    background-image: url(../img/modelo-x.svg);
+}
+
+.model-y {
+    background-image: url(../img/modelo-y.svg);
+}
+
+.model-z {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    background-image: url(../img/modelo-z.svg);
+}
+
+@media (min-width: 768px) {
+    .model-z h3 {
+        font-size: 3rem;
+    }
+}
+@media (min-width: 992px) {
+    .model-z {
+        grid-column: 2/3;
+        grid-row: 1/3;
+        background-size: 15rem;
+    }
+    .model-z h3 {
+        font-size: 2.6rem;
+    }
+}
+
+.model-z .price {
+    font-size: 4rem;
 }
