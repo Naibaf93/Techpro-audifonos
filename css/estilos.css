@@ -178,11 +178,35 @@ img {
     background-size: 100%, 110rem;
 }
 
+.notavif.not-webp .about-tech {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--primary-blue) 0%), url(../img/imagen-mujer.jpg);
+}
+
+.webp .about-tech {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--primary-blue) 0%), url(../img/imagen-mujer.webp);
+}
+
+.avif .about-tech {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--primary-blue) 0%), url(../img/imagen-mujer.avif);
+}
+
 @media (min-width: 768px) {
     .about-tech {
-        background-image: linear-gradient(to left, transparent 50%, var(--primary-blue) 0%), url(../img/imagen-mujer.jpg);
         background-repeat: repeat, no-repeat;
     }
+
+    .notavif.not-webp .about-tech {
+        background-image: linear-gradient(to left, transparent 50%, var(--primary-blue) 0%), url(../img/imagen-mujer.jpg);
+    }
+
+    .webp .about-tech {
+        background-image: linear-gradient(to left, transparent 50%, var(--primary-blue) 0%), url(../img/imagen-mujer.webp);
+    }
+
+    .avif .about-tech {
+        background-image: linear-gradient(to left, transparent 50%, var(--primary-blue) 0%), url(../img/imagen-mujer.avif);
+    }
+
 }
 
 .about-tech-grid {
@@ -347,18 +371,41 @@ img {
 /* Newsletter */
 
 .newsletter {
-    background-image: linear-gradient(to bottom, transparent 50%, var(--white) 0%), url(../img/newsletter.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100%, 60rem;
 }
 
+.notavif.not-webp .newsletter {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--white) 0%), url(../img/newsletter.jpg);
+
+}
+
+.webp .newsletter {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--white) 0%), url(../img/newsletter.webp);
+}
+
+.avif .newsletter {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--white) 0%), url(../img/newsletter.avif);
+}
+
 @media (min-width: 910px) {
     .newsletter {        
-        background-image: linear-gradient(to right, transparent 50%, var(--white) 0%), url(../img/newsletter.jpg);
         background-position: center, -21rem -4rem;
         background-size: 100%, 100rem;
         padding: 10rem 0;  
+    }
+
+    .notavif.not-webp .newsletter {
+        background-image: linear-gradient(to right, transparent 50%, var(--white) 0%), url(../img/newsletter.jpg);
+    }
+
+    .webp .newsletter {
+        background-image: linear-gradient(to right, transparent 50%, var(--white) 0%), url(../img/newsletter.webp);
+    }
+
+    .avif .newsletter {
+        background-image: linear-gradient(to right, transparent 50%, var(--white) 0%), url(../img/newsletter.avif);
     }
 }
 
