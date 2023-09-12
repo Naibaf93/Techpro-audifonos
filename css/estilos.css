@@ -413,5 +413,29 @@ img {
 
 .form input[type="submit"]:hover {
     background-color: var(--secondary-green);
-    transform: scale(.9);
+    transform: scale(.8);
 }
+
+/* footer */
+
+ footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer p {
+    text-align: center;
+    font-family: var(--fuenteSecundaria);
+    color: var(--primary-blue);
+    font-size: 2.5rem;
+    padding: calc(var(--separacion) * 3);
+    
+}
+
+@media (min-width: 672px) {
+    .footer p {
+        text-align: center;
+        padding: var(--separacion);
+    }
+} 
